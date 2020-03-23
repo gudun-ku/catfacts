@@ -6,5 +6,5 @@ import retrofit2.http.GET
 interface CatFactService {
 
     @GET("facts")
-    fun getFacts(): Call<Response>
+    fun getFacts(): Single<Response>
 }

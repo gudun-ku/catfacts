@@ -10,6 +10,10 @@ ext {
     retrofitVersion = '2.6.2'
     moshiVersion = '1.8.0'
     okhttpVersion = '4.2.0'
+    rxJavaVersion = '2.2.9'
+    rxAndroidVersion = '2.1.1'
+    rxKotlinVersion = '2.3.0'
+    roxieVersion = '0.4.0'
 }
 
 allprojects {
