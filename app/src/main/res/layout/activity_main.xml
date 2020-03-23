@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".catfact.CatFactActivity">
 
     <ProgressBar
         android:id="@+id/loadingIndicator"
@@ -21,8 +21,8 @@
 
     <ImageView
         android:id="@+id/catImageView"
-        android:layout_width="240dp"
-        android:layout_height="240dp"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
         android:src="@drawable/ic_cat"
         android:layout_marginTop="128dp"
         app:layout_constraintStart_toStartOf="parent"
