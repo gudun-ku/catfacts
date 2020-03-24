@@ -31,10 +31,6 @@ dependencies {
     implementation "androidx.appcompat:appcompat:$androidXVersion"
     implementation "androidx.core:core-ktx:$androidXVersion"
     implementation "androidx.constraintlayout:constraintlayout:$constraintLayoutVersion"
-    testImplementation "junit:junit:$junitVersion"
-    androidTestImplementation "androidx.test.ext:junit:$junitExtVersion"
-    androidTestImplementation "androidx.test:runner:$runnerVersion"
-    androidTestImplementation "androidx.test.espresso:espresso-core:$espressoVersion"
 
     implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
     implementation "com.squareup.moshi:moshi:$moshiVersion"
@@ -50,5 +46,14 @@ dependencies {
     implementation "io.reactivex.rxjava2:rxkotlin:$rxKotlinVersion"
 
     implementation "com.ww:roxie:$roxieVersion"
+
+    testImplementation "junit:junit:$junitVersion"
+    testImplementation "com.nhaarman.mockitokotlin2:mockito-kotlin:$mockitoKotlinVersion"
+    testImplementation "androidx.arch.core:core-testing:$coreTestingVersion"
+
+
+    androidTestImplementation "androidx.test.ext:junit:$junitExtVersion"
+    androidTestImplementation "androidx.test:runner:$runnerVersion"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$espressoVersion"
 }
 
