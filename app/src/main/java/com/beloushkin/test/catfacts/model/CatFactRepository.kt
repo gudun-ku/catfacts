@@ -11,7 +11,7 @@ class CatFactRepository(val catFactService: CatFactService) {
     fun getFact(): Single<String>{
         return catFactService.getFacts()
             .map { response: Response ->
-                val randomInt = Random.nextInt(0, response.all.size - 1)
+                val randomInt = if(response.all.size > 1) Random.nextInt(0, response.all.size - 1) else 0
                 response.all[randomInt].text
             }
     }

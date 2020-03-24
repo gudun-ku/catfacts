@@ -8,7 +8,7 @@ import com.beloushkin.test.catfacts.di.DependencyInjectionImpl
 class App: Application() {
 
     val di: DependencyInjection by lazy {
-        DependencyInjectionImpl()
+        DependencyInjectionImpl(getString(R.string.api_url))
     }
 }
 

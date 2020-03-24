@@ -18,7 +18,7 @@ interface DependencyInjection {
     val catFactViewModel: BaseViewModel<CatFactAction, CatFactState>
 }
 
-class DependencyInjectionImpl: DependencyInjection {
+class DependencyInjectionImpl(apiUrl: String): DependencyInjection {
 
     override val catFactViewModel: BaseViewModel<CatFactAction, CatFactState>
 
@@ -33,7 +33,7 @@ class DependencyInjectionImpl: DependencyInjection {
 
         val retrofit = Retrofit.Builder()
             .client(client)
-            .baseUrl("https://cat-fact.herokuapp.com/")
+            .baseUrl(apiUrl)
             .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
             .addConverterFactory(MoshiConverterFactory.create(moshi))
             .build()

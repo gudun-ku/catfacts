@@ -17,7 +17,15 @@ android {
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+    testBuildType 'instrumented'
     buildTypes {
+        debug{
+            applicationIdSuffix '.debug'
+        }
+        instrumented{
+            initWith debug
+            applicationIdSuffix '.instrumented'
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
@@ -55,5 +63,7 @@ dependencies {
     androidTestImplementation "androidx.test.ext:junit:$junitExtVersion"
     androidTestImplementation "androidx.test:runner:$runnerVersion"
     androidTestImplementation "androidx.test.espresso:espresso-core:$espressoVersion"
+    androidTestImplementation "com.squareup.okhttp3:mockwebserver:$mockWebserverVersion"
+    androidTestImplementation "androidx.test:rules:$rulesVersion"
 }
 

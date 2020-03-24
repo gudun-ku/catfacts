@@ -16,6 +16,8 @@ ext {
     roxieVersion = '0.4.0'
     mockitoKotlinVersion = '2.2.0'
     coreTestingVersion = '2.0.1'
+    mockWebserverVersion = '4.2.0'
+    rulesVersion = '1.2.0'
 }
 
 allprojects {
