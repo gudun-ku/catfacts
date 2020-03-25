@@ -13,7 +13,7 @@ import org.hamcrest.CoreMatchers.not
 import org.junit.Rule
 import org.junit.Test
 
-class CatFactActivityTest {
+class CatFactActivityTestMWS {
 
     // start activity
     @Rule

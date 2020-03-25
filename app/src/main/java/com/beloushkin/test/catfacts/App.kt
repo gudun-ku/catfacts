@@ -2,12 +2,14 @@ package com.beloushkin.test.catfacts
 
 import android.app.Application
 import android.content.Context
+import androidx.annotation.VisibleForTesting
 import com.beloushkin.test.catfacts.di.DependencyInjection
 import com.beloushkin.test.catfacts.di.DependencyInjectionImpl
 
-class App: Application() {
+@VisibleForTesting
+open class App: Application() {
 
-    val di: DependencyInjection by lazy {
+    open val di: DependencyInjection by lazy {
         DependencyInjectionImpl(getString(R.string.api_url))
     }
 }

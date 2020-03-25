@@ -33,6 +33,7 @@ class CatFactActivity : AppCompatActivity() {
                 catFactView.text = catFact
             }
             loadingIndicator.isVisible = loading
+            getFactButton.isEnabled = true
             errorView.isVisible = displayError
         }
     }

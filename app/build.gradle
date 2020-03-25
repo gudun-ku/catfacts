@@ -15,7 +15,7 @@ android {
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "com.beloushkin.test.catfacts.AndroidTestRunner"
     }
     testBuildType 'instrumented'
     buildTypes {
@@ -38,6 +38,7 @@ dependencies {
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion"
     implementation "androidx.appcompat:appcompat:$androidXVersion"
     implementation "androidx.core:core-ktx:$androidXVersion"
+
     implementation "androidx.constraintlayout:constraintlayout:$constraintLayoutVersion"
 
     implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
